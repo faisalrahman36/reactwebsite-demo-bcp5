@@ -4,7 +4,7 @@ function About({id })  {
   return (
     <div id={id}>
       <h2>This is just a demo website meant for learning only. Images and content are not claimed by
-        me and and owned by their respective creators.
+        me and they are owned by their respective creators/owners.
       </h2>
       <p>
 

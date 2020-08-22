@@ -18,7 +18,22 @@ export default class Navbar extends Component {
             onClick={this.scrollToTop}
           > Astro <i>NewsAndReviews</i> </h2>
           <ul className="nav-items">
+          <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Home
+              </Link>
+            </li>
+
+            
             <li className="nav-item">
+              
               <Link
                 activeClass="active"
                 to="reviews"
