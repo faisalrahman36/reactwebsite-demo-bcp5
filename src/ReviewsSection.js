@@ -7,8 +7,8 @@ export default function ReviewsSection({id }) {
     <div className="ulhorizontal" id={id}>
       {Object.entries(reviews).map(([slug, { name, img,title,description,source }]) => (
          
-          <div key={slug} className="news-section">
-            <h2>{name}</h2>
+        <div key={slug} className="news-section">
+    <h2>{name}</h2>
       <p>{title}</p>
       
 <br />
