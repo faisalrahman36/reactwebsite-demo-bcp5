@@ -36,3 +36,121 @@
     transform: rotate(360deg);
   }
 }
+
+.nav {
+  /*background-color: var(--off-white);*/
+  background-color:black;
+  color: white;
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  height: 10%;
+  z-index: 1000;
+  box-shadow: 0 4% 14% 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+  height: 15%;
+  width: 15%;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.nav .nav-content {
+  width: 80%;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-weight: 200;
+  border-radius: 5%;
+  border-color: silver;
+
+  background-color: black;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 2rem;
+  color:white;
+}
+
+.nav-item:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.news-section {
+background-image: url("https://p0.pikist.com/photos/254/232/star-points-stains-effect-space-infinite-background-dark-night.jpg");
+align-content: left;
+color: white;
+align-self: left;
+}
+
+.readmore {
+height: 6%;
+width:10%;
+background-color: black;
+color:white;
+
+}
+
+
+h2.logo{
+  color:white;
+  background: rgb(209,228,246);
+background: linear-gradient(0deg, rgba(209,228,246,1) 18%, rgba(9,29,64,1) 100%);
+  animation:blinking 1.5s infinite;
+  font-size: 20px;
+  }
+  @keyframes blinking{
+  0%{   color:skyblue;   }
+  47%{   color: #000; }
+  62%{   color: transparent; }
+  97%{   color:transparent; }
+  100%{  color: #000;   }
+  }
+  img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    transform: scale(2);
+
+    animation: shake 0.5s;
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: 2;
+  }
+
+  img:active{
+
+    transform: scale(2);
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    
+  }
